@@ -35,3 +35,10 @@ En JS se pueden crear de manera directa objetos en vez de necesitar una clase co
 
 ## Arrays
 En JS los arrays son dinámicos por defecto y tienen métodos mas metodos, se dan ejemplos en la clase de arreglos. En estos se demuestra la utilidad en los arreglos que se usan ya que estos son muy versatiles y utiles, haciendo que algunas operaciones sean aun mas sencilla y simplificando proceso extras.
+
+## Ejercicio 1
+En este se usa un encarpetado para la separacion del JS y del HTML que sera la forma de ver la actividad que se esta realizando.
+
+* Ejercicio 1: Ejercicio para comenzar con entendimiento de JS
+    - index: Clase de html front
+    - script: Clase JS de funcionalidad
