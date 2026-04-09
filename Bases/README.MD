@@ -30,3 +30,6 @@ Se trataran de sacar a relucir mejores formas de trabajac como los son arrows pa
 ## Ambito
 Las llaves no siempre crean ambitos nuevos, es decir que no necesita un bloque completo para trabajar. Es decir que despues de las llaves si puede seguir existiendo los ingresos de variables, se explica en la clase de ambito.js
 
+## Objetos
+En JS se pueden crear de manera directa objetos en vez de necesitar una clase completa
+
