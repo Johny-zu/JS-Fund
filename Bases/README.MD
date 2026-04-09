@@ -27,3 +27,6 @@ Las funciones son ciudadanos de primera clase, ya que estas viven dentro de las 
 
 Se trataran de sacar a relucir mejores formas de trabajac como los son arrows para la continuidad de las actividades y darmas limpieza a las cosas.
 
+## Ambito
+Las llaves no siempre crean ambitos nuevos, es decir que no necesita un bloque completo para trabajar. Es decir que despues de las llaves si puede seguir existiendo los ingresos de variables, se explica en la clase de ambito.js
+
