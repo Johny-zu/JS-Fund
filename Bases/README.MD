@@ -20,5 +20,10 @@ Para las comparaciones se usan === y !==
 ## Truthy y Falsy 
 Aqui cualquier valos puede ser verdadero o falso segun el contexto, en la clase TF.js
 
-Estos se ingresan como vacios o llenos o si usan unvalor null correcto como el NaN
+Estos se ingresan como vacios o llenos o si usan unvalor null correcto como el NaN.
+
+## Funciones
+Las funciones son ciudadanos de primera clase, ya que estas viven dentro de las clases que son metodos. En JS, las funiones con valores como cualquier otro las puedes guardar en variables y pasarlas como argumentos y retornoarnlas, se veran algunos ejemplos en la clase de funciones.
+
+Se trataran de sacar a relucir mejores formas de trabajac como los son arrows para la continuidad de las actividades y darmas limpieza a las cosas.
 
