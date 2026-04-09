@@ -33,3 +33,5 @@ Las llaves no siempre crean ambitos nuevos, es decir que no necesita un bloque c
 ## Objetos
 En JS se pueden crear de manera directa objetos en vez de necesitar una clase completa
 
+## Arrays
+En JS los arrays son dinámicos por defecto y tienen métodos mas metodos, se dan ejemplos en la clase de arreglos. En estos se demuestra la utilidad en los arreglos que se usan ya que estos son muy versatiles y utiles, haciendo que algunas operaciones sean aun mas sencilla y simplificando proceso extras.
