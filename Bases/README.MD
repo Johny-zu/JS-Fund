@@ -9,3 +9,10 @@ Declaracion de variables: Existen 3 formas de la declaracion, las cuales son
 * let: son variables que cambias y las mas usadas
 * const: Valores que no cambian
 * var: La forma vieja de declarar, no se recomienda usar
+
+## Comparaciones
+Los comparaios con == es igualdad abstracta, esto *convierte* tipos de manera automatica, causando resultados erroneos.
+
+Por otro lado la igualdad estricta es === ya que no convierten los tipos, son iguales solo si son del mismo tipo y valor, lo que permite la correctacomparacion. 
+
+Para las comparaciones se usan === y !==
