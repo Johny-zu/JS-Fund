@@ -16,3 +16,9 @@ Los comparaios con == es igualdad abstracta, esto *convierte* tipos de manera au
 Por otro lado la igualdad estricta es === ya que no convierten los tipos, son iguales solo si son del mismo tipo y valor, lo que permite la correctacomparacion. 
 
 Para las comparaciones se usan === y !==
+
+## Truthy y Falsy 
+Aqui cualquier valos puede ser verdadero o falso segun el contexto, en la clase TF.js
+
+Estos se ingresan como vacios o llenos o si usan unvalor null correcto como el NaN
+
