@@ -25,7 +25,7 @@ if (nombre) {
 }
 
 
-{ usuarios.length && <ListaDeUsuarios /> }  // si length es 0, no muestra nada
+//{ usuarios.length && <ListaDeUsuarios/> }  // si length es 0, no muestra nada
 
 // Segundo ejemplo de uso:
 if ("0") console.log("1");
