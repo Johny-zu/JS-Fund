@@ -42,3 +42,6 @@ En este se usa un encarpetado para la separacion del JS y del HTML que sera la f
 * Ejercicio 1: Ejercicio para comenzar con entendimiento de JS
     - index: Clase de html front
     - script: Clase JS de funcionalidad
+
+* Ejercicio 2: juego de constantes
+    - index y script
