@@ -42,6 +42,9 @@ Como funcionan los simbolos para las declaraciones de codigo y como usarlas
 ## Set
 Estructura de datos que almacena colecciones de valores únicos de cualquier tipo (primitivos u objetos), garantizando que no haya duplicados
 
+## Maps
+crea un nuevo array aplicando una función a cada elemento de un array original, sin modificar el original (inmutabilidad). Es ideal para transformar datos, formatear elementos o extraer valores específicos. Retorna un nuevo array de la misma longitud que el original
+
 ## Ejercicio 1 
 Ejercicios de declaraciones simples
 
