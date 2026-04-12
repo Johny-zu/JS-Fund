@@ -53,3 +53,6 @@ Ejercicio de operadores
 
 ## Ejercicio 3
 Ejercicio de Strings
+
+## Ejercicio 4
+Ejercicios de funciones
