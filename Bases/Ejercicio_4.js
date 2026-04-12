@@ -50,7 +50,7 @@ function capital(palabraCapital){
 let palabraCapital = ["p", "a", "l", "a"]
 console.log(capital(palabraCapital)) 
 
-//Ingresa una funcion que dicte si un numero es primo o no
+// 5. Ingresa una funcion que dicte si un numero es primo o no
 console.log("=======================================")
 function primos(numero){
     return numero % 2 === 0 ? true : false  
@@ -58,6 +58,21 @@ function primos(numero){
 let numero = 6
 console.log(`¿El numero ${numero} es primo? ` + primos(numero))
 
-//console.log("=======================================")
-//console.log("=======================================")
-//console.log("=======================================")
+// 6. declara dos arrays que regresen los iguales en una funcion
+console.log("=======================================")
+
+function iguales(primer, segundo){
+    let resultado = []
+    for (let i = 0; i < primer.length; i++){
+        for (let j = 0; j < segundo.length; j++){
+            if(primer[i] === segundo[j]){
+                resultado.push(primer[i])
+            }
+        }
+    }
+    return resultado;
+}
+
+let array1 = [1, 2, 3, 4, 5]
+let array2 = [3, 5, 6, 7]
+console.log(iguales(array1, array2)) 
