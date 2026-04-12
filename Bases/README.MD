@@ -56,3 +56,7 @@ Ejercicio de Strings
 
 ## Ejercicio 4
 Ejercicios de funciones
+
+## Ejercicio 5
+Ingreso de ejercicio de objetos 
+
