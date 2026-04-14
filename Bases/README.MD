@@ -51,6 +51,9 @@ Explicacion de clases en JS
 ## Try-catch
 Forma de manejo de errores para codigo mas rebuzto que sea capas de no romper y dar un log del error sin que este rompa y perjudique el programa en ejecucion
 
+## Mensajes en consola
+forma extras de dar mensajes en cosola, como tanto como back como parte del front en inspectores y otras cosas
+
 ## Ejercicio 1 
 Ejercicios de declaraciones simples
 
