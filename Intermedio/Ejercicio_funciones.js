@@ -43,6 +43,29 @@ function potencia(base, exponente){
 console.log(potencia(3,3))
 // 4. Crea una función createCounter() que reciba un valor inicial y retorne un objeto con métodos para increment(), decrement() y getValue(), utilizando un closure para mantener el estado
 console.log("=======================================")
+function createCounter(numero) {
+    let contador = numero
+    return{
+        increment: function(){
+            contador++
+            return contador
+        },
+        decrement: function(){
+            contador--
+            return contador
+        },
+        getValue: function(){
+            return contador
+        }
+    }
+}
+
+const counter = createCounter(10)
+console.log(counter.getValue())     
+console.log(counter.increment())    
+console.log(counter.increment())    
+console.log(counter.decrement())    
+console.log(counter.getValue())     
 
 // 5. Crea una función sumManyTimes(multiplier, ...numbers) que primero sume todos los números (usando parámetros Rest) y luego multiplique el resultado por multiplier
 console.log("=======================================")
