@@ -69,6 +69,15 @@ console.log(counter.getValue())
 
 // 5. Crea una función sumManyTimes(multiplier, ...numbers) que primero sume todos los números (usando parámetros Rest) y luego multiplique el resultado por multiplier
 console.log("=======================================")
+function sumManyTimes(multi, ...numero){
+    let resultado = 0
+    for(let num of numero){
+        resultado += num
+    }
+    return multi * resultado
+}
+
+console.log(sumManyTimes(2,1,2,3,4))
 
 // 6. Crea un Callback que se invoque con el resultado de la suma de todos los números que se le pasan a una función
 console.log("=======================================")
