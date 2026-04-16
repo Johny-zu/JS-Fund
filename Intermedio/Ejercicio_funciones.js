@@ -81,15 +81,17 @@ console.log(sumManyTimes(2,1,2,3,4))
 
 // 6. Crea un Callback que se invoque con el resultado de la suma de todos los números que se le pasan a una función
 console.log("=======================================")
+function procesoSum(mul, datos, callback){
+    const resultado = sumManyTimes(mul, ...datos)
+    callback(resultado)
+}
+function procesoRes(resultado){
+    console.log(resultado)
+}
+function procesoRes2(resultado){
+    console.log(`Resultado: ${resultado}`)
+}
 
-// 7. Desarrolla una función parcial
-console.log("=======================================")
-
-// 8. Implementa un ejemplo que haga uso de Spread
-console.log("=======================================")
-
-// 9. Implementa un retorno implícito
-console.log("=======================================")
-
-// 10. Haz uso del this léxico
-console.log("=======================================")
+const datos = [1, 2, 3, 4]
+procesoSum(2, datos, procesoRes)    
+procesoSum(3, [5, 5, 5], procesoRes2) 
