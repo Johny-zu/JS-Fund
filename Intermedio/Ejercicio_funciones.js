@@ -19,6 +19,18 @@ const sonido2 = retorneo()
 sonido2("pong")  
 
 // 2. Implementa una función currificada que multiplique 3 números
+function multiplicar(a) {
+    return function(b) {
+        return function(c) {
+            return a * b * c
+        }
+    }
+}
+
+
+console.log(multiplicar(2)(3)(4))  
+console.log(multiplicar(5)(2)(3))  
+
 
 // 3. Desarrolla una función recursiva que calcule la potencia de un número elevado a un exponente
 
