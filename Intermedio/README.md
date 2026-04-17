@@ -18,7 +18,12 @@ Callbacks: Es cuando pasamos una funcion a otra funcion como argumento para pers
 
 ## Estructuras avanzadas
 Estructuras de datos con mas informacion, acerca de como pueden ser usadas de maner mas profesional, se describe en las siguientes:
-- Forech, metodo que puede recorrer un for con mejor control y mas claridad
-- Map: Sera un array con una funcion en cada uno de los elementos del arrray
-- filter: Realizara la operacion de map, de dar funciones por array pero filtrandobajo una logica concedida
-- reduce: Se realizara una funcion reductora sobre cada elemento del array pero con la particularidad de que regresara un numero como el todo de lo ingresado en array
+- Estructuras funcionales
+    - Forech, metodo que puede recorrer un for con mejor control y mas claridad
+    - Map: Sera un array con una funcion en cada uno de los elementos del arrray
+    - filter: Realizara la operacion de map, de dar funciones por array pero filtrandobajo una logica concedida
+    - reduce: Se realizara una funcion reductora sobre cada elemento del array pero con la particularidad de que regresara un numero como el todo de lo ingresado en array
+- Estructuras manipulables
+    - Flat: Este aplanara un array que tenga una profundidad especifica
+    - ordenacion: metodos de ordenacion
+    - reverse: Un sort al reves, la diferencia es que esta es una mutacion void, entonces con solo aplicarse basta para poder llevar adelante la operacion
