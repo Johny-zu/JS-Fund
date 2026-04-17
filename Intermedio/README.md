@@ -15,3 +15,10 @@ En esta clase se habla acerca de los siguientes temas
 - Funciones parciales: Esta divide una funcion con varios parametros en funcion mas pequeñas que recibe partes de los parametros y retornan una nueva funcion que espera los nuevos parametros
 - Curryng: Esta funcion permite tomar una funcion a la vez para ir desglosando la funcion con el fin de dar mas margen de entrada
 Callbacks: Es cuando pasamos una funcion a otra funcion como argumento para personalizar el comportamiento
+
+## Estructuras avanzadas
+Estructuras de datos con mas informacion, acerca de como pueden ser usadas de maner mas profesional, se describe en las siguientes:
+- Forech, metodo que puede recorrer un for con mejor control y mas claridad
+- Map: Sera un array con una funcion en cada uno de los elementos del arrray
+- filter: Realizara la operacion de map, de dar funciones por array pero filtrandobajo una logica concedida
+- reduce: Se realizara una funcion reductora sobre cada elemento del array pero con la particularidad de que regresara un numero como el todo de lo ingresado en array
