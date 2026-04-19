@@ -36,3 +36,6 @@ Estructuras de datos con mas informacion, acerca de como pueden ser usadas de ma
     - diferencia: Ingresa lo que no esta de un set
     - conversin de set: Se pueden convertir los sets en arrays usando el spread ...
     - Iteracion: Se puede iterar por elementos usando los foreach
+- Mapas avanzados
+    - Iteracion: Iteracion de valores en mapa
+    - conversion: Se puede converitr los maps en otro tipo de objetos

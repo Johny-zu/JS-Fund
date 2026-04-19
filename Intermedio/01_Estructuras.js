@@ -77,3 +77,20 @@ console.log(...setA)
 
 // iteracion
 setA.forEach(elemento => console.log(elemento))
+
+// mapas avanzados
+let pruebaMapa = new Map([
+    ["name", "dove"],
+    ["edad", 23],
+    ["email", "dove@gmail.com"]
+])
+
+pruebaMapa.forEach((valorMap, llave) => console.log(`${llave}: ${valorMap}`))
+
+// Conversion de map a array
+const conversionMapArreglo = Array.from(pruebaMapa)
+console.log(conversionMapArreglo)
+
+// conversion a objeto
+const conversionMapObjeto = Object.fromEntries(pruebaMapa)
+console.log(conversionMapObjeto)
