@@ -40,3 +40,13 @@ console.log(ordenLetras)
 //reverse 
 ordenNumeros.reverse()
 console.log(ordenNumeros)
+
+// busqueda
+
+//Includes
+console.log(ordenNumeros.includes(3))
+console.log(ordenNumeros.includes(15))
+
+// find 
+let primerHallado = ordenNumeros.find(elementos => elementos % 2 === 0)
+console.log(primerHallado)

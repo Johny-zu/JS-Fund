@@ -27,3 +27,6 @@ Estructuras de datos con mas informacion, acerca de como pueden ser usadas de ma
     - Flat: Este aplanara un array que tenga una profundidad especifica
     - ordenacion: metodos de ordenacion
     - reverse: Un sort al reves, la diferencia es que esta es una mutacion void, entonces con solo aplicarse basta para poder llevar adelante la operacion
+- Buesqueda en estructuras
+    - Includes: Esta arroja aquello que incluya
+    - find: En base a una operacion por array busca un numero bajo un cierto argumento
