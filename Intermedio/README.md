@@ -39,3 +39,10 @@ Estructuras de datos con mas informacion, acerca de como pueden ser usadas de ma
 - Mapas avanzados
     - Iteracion: Iteracion de valores en mapa
     - conversion: Se puede converitr los maps en otro tipo de objetos
+
+## Objetos avanzados
+Conceptos avanzados de orientada a objetos
+- Prototipos Mecanismo con el que los objetos pueden heredar propiedades y funciones de otros objetos
+    - Herencia: Maneja la baja de información de objeto padre como un prototipo de objeto
+- Metodos estaticos y de instancia
+    
