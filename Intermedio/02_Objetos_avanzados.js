@@ -24,10 +24,17 @@ let programador = Object.create(persona)
 programador.saludo()
 programador.lenguaje = "JS"
 console.log(`El programador maneja: ${programador.lenguaje}`)
-console.log(persona.lenguaje)
+console.log(persona.lenguaje) //output undefined
 
 // Metodos estaticos y de instancia
-function persona(nombre, edad){
+function Persona(nombre, edad){
     this.nombre = nombre
     this.edad = edad
 }
+
+Persona.prototype.saludo = function(){
+    console.log(`Hola ${this.nombre}`)
+}
+
+let nueva_persona = new Persona("zu", 22)
+nueva_persona.saludo()
