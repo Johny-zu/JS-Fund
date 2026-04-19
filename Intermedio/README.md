@@ -30,3 +30,9 @@ Estructuras de datos con mas informacion, acerca de como pueden ser usadas de ma
 - Buesqueda en estructuras
     - Includes: Esta arroja aquello que incluya
     - find: En base a una operacion por array busca un numero bajo un cierto argumento
+- Sets avanzados: Revision de operaciones de conjuntos
+    - Eliminacion de repetidos: En este se puede usar un spread para unir los sets y quitar repetidos mostrandolos en forma de array
+    - Union: este ingresa ambos sets y los tranforma en un array para unirlos sin duplicaciones
+    - diferencia: Ingresa lo que no esta de un set
+    - conversin de set: Se pueden convertir los sets en arrays usando el spread ...
+    - Iteracion: Se puede iterar por elementos usando los foreach

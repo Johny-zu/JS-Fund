@@ -50,3 +50,30 @@ console.log(ordenNumeros.includes(15))
 // find 
 let primerHallado = ordenNumeros.find(elementos => elementos % 2 === 0)
 console.log(primerHallado)
+
+// Sets Avanzados
+// - Operaciones
+// Eliminacion de repetidos
+const ArregloNumeros = [1,2,3,4,5,6,6]
+const SetNumeros = [... new Set(ArregloNumeros)]
+console.log(SetNumeros)
+
+// Union
+const setA = new Set([1,2,3])
+const setB = new Set([2, 3, 4,5,6])
+const union = new Set([... setA, ... setB])
+console.log(union)
+
+// Interseccion
+const interseccion = new Set([...setA].filter(elemento => setB.has(elemento)))
+console.log(interseccion)
+
+///Diferencia
+const diferencia = new Set([...setA].filter(elemento => !setB.has(elemento)))
+console.log(diferencia)
+
+// Conversion de set
+console.log(...setA)
+
+// iteracion
+setA.forEach(elemento => console.log(elemento))
