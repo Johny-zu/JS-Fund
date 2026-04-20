@@ -49,3 +49,11 @@ Conceptos avanzados de orientada a objetos
     - Avanzados: 
         - Assign: Esta puede convinar objetos
         - keys, values, entries: metodos que permiten obetener claves, valores de un objeto
+
+## Clases avanzadas
+El concepto en este es que la buena practica de construir objetos es por medio de una clase, aunque con el paso el tiempo los metodos como los prototipos sigen existiendo y JS tiene la flexibilidad de poder hacer mas con esos. lo cual es ingreso de nuevas caratersiticas fuera de la clase insertandolas.
+Algunas de las cosas por ver sobre clases serian las siguientes:
+- Abstraccion: son clases que no se pueden instancias directamente 
+- Polimorfismo: Clase o funcion que permite cambiar el comportamiento de una clase base
+- mixins: Esto da composision sobre la herencia, permite la combinacion de metodos sin necesitar por completo de la herencia
+- singleton: Esta clase busca solo poder instanciarse una vez, es decir que sin importar lo que hagan con la clase, esta no pueda cambiar
