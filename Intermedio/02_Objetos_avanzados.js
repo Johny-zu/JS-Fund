@@ -38,3 +38,16 @@ Persona.prototype.saludo = function(){
 
 let nueva_persona = new Persona("zu", 22)
 nueva_persona.saludo()
+
+// Metodos avanzados
+// assign
+let persona_dn = {nome: "dove2"}
+let detalle_persona = {edad: 23, alias: "dozu"}
+
+let persona_completa = Object.assign(persona_dn, detalle_persona)
+console.log(persona_completa)
+
+// keys, values, entries
+console.log(Object.keys(persona_completa))
+console.log(Object.values(persona_completa))
+console.log(Object.entries(persona_completa))

@@ -45,4 +45,7 @@ Conceptos avanzados de orientada a objetos
 - Prototipos Mecanismo con el que los objetos pueden heredar propiedades y funciones de otros objetos
     - Herencia: Maneja la baja de información de objeto padre como un prototipo de objeto
 - Metodos estaticos y de instancia
-    
+    - Estaticos: Estos son construidos desde un molde de un objeto como constructores
+    - Avanzados: 
+        - Assign: Esta puede convinar objetos
+        - keys, values, entries: metodos que permiten obetener claves, valores de un objeto
