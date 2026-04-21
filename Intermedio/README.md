@@ -57,3 +57,4 @@ Algunas de las cosas por ver sobre clases serian las siguientes:
 - Polimorfismo: Clase o funcion que permite cambiar el comportamiento de una clase base
 - mixins: Esto da composision sobre la herencia, permite la combinacion de metodos sin necesitar por completo de la herencia
 - singleton: Esta clase busca solo poder instanciarse una vez, es decir que sin importar lo que hagan con la clase, esta no pueda cambiar
+- Symbol: Tipo de dato primitivo que no permite el cambio

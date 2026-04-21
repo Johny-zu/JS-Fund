@@ -88,3 +88,17 @@ const sesion1 = new Sesion("dove@gmail.com")
 const sesion2 = new Sesion()
 console.log(sesion1.nombre)
 console.log(sesion2.nombre)
+
+// symbol
+const ID = Symbol("id")
+
+class Usuario{
+    constructor(nombre){
+        this.nombre = nombre
+        this[ID] = Math.random()
+    }
+}
+
+const usuario = new Usuario("dove")
+console.log(usuario.nombre)
+console.log(usuario[ID])
