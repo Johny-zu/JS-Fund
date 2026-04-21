@@ -109,3 +109,7 @@ class Carro {}
 const carro = new Carro()
 
 console.log(carro instanceof Carro)
+
+// create 
+const otroCarro = Object.create(Carro.prototype)
+console.log(otroCarro instanceof Carro)

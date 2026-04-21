@@ -59,3 +59,4 @@ Algunas de las cosas por ver sobre clases serian las siguientes:
 - singleton: Esta clase busca solo poder instanciarse una vez, es decir que sin importar lo que hagan con la clase, esta no pueda cambiar
 - Symbol: Tipo de dato primitivo que no permite el cambio
 - instanceof: Comprobaciones de instancias 
+- create: Creacion en base al prototipó de un objeto
