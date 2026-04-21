@@ -102,3 +102,10 @@ class Usuario{
 const usuario = new Usuario("dove")
 console.log(usuario.nombre)
 console.log(usuario[ID])
+
+// instance of 
+class Carro {}
+
+const carro = new Carro()
+
+console.log(carro instanceof Carro)

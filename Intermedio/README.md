@@ -58,3 +58,4 @@ Algunas de las cosas por ver sobre clases serian las siguientes:
 - mixins: Esto da composision sobre la herencia, permite la combinacion de metodos sin necesitar por completo de la herencia
 - singleton: Esta clase busca solo poder instanciarse una vez, es decir que sin importar lo que hagan con la clase, esta no pueda cambiar
 - Symbol: Tipo de dato primitivo que no permite el cambio
+- instanceof: Comprobaciones de instancias 
