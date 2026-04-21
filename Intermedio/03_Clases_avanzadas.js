@@ -113,3 +113,34 @@ console.log(carro instanceof Carro)
 // create 
 const otroCarro = Object.create(Carro.prototype)
 console.log(otroCarro instanceof Carro)
+
+// Proxy    
+const proxy = {
+    get(target, property){
+        console.log(`Se esta accediendo a la propiedad: ${property}`)
+        return target[property]
+        //console.log(target)
+        //console.log(property)
+    },
+    set(target, property, valor){
+        if(property === "balanceo" && valor < 0){
+            throw new Error("El saldo no puede ser negativo");
+        }
+        target[property] = valor
+        //console.log(target)
+        //console.log(property)
+        //console.log(valor)
+    }
+}
+
+class CuentaBanco {
+    constructor(balanceo){
+        this.balanceo = balanceo
+    }
+}
+
+const cuenta  = new Proxy(new CuentaBanco(100), proxy)
+console.log(cuenta.balanceo)
+
+cuenta.balanceo = 49
+console.log(cuenta.balanceo)

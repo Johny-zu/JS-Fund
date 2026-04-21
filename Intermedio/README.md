@@ -60,3 +60,4 @@ Algunas de las cosas por ver sobre clases serian las siguientes:
 - Symbol: Tipo de dato primitivo que no permite el cambio
 - instanceof: Comprobaciones de instancias 
 - create: Creacion en base al prototipó de un objeto
+- proxy: Intercepta y personaliza el comportamiento de estas clases para seguridad y pruebas de clase mediante proxy
