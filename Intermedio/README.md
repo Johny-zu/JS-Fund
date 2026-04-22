@@ -61,3 +61,11 @@ Algunas de las cosas por ver sobre clases serian las siguientes:
 - instanceof: Comprobaciones de instancias 
 - create: Creacion en base al prototipó de un objeto
 - proxy: Intercepta y personaliza el comportamiento de estas clases para seguridad y pruebas de clase mediante proxy
+
+## Asincronia
+Cuando JS ejecuta codigo, este se ejecuta en un solo hilo donde va interpretando linea a linea y ejecutando de esa forma. Entonces esta este modulo es para generar mecanismos capaces de generar un multihilo para que las actividades de una pagina no se queden congeladas. Para la programacion asincrona se sigue la siguientes estructuras
+- Event loop: Estos bucles de eventos interpreta como debe ejecutar los eventos en un codigo para darle un seguimiento correcto y pueda hacer multitask de forma en la que el programa no se vea afectado, maneja los siguiente componentes
+    - call stack(pila de ejecucion)
+    - Web apis(Apis del navegados o node.js): setTimeout()...
+    - task queue(Colas de tareas) y microtaskQueue
+    
