@@ -48,6 +48,27 @@ tarea1(() => {
 //    Si el número es par, la promesa se resuelve con el mensaje "Número par". 
 //    Si el número es impar, la promesa se rechaza con el mensaje "Número impar".
 
+function verificarNumero(num){
+    return new Promise((resolver, rechazo) => {
+        setTimeout(() =>{
+            if(num % 2 === 0){
+                resolver("Número par")
+            } else {
+                rechazo("Número impar")
+            }
+        }, 3000)
+    })
+}
+
+verificarNumero(8)
+    .then(resultado => {
+        console.log(resultado)
+    })  
+    .catch(error => {
+        console.log(error)
+    })
+
+
 // 4. Crea tres funciones que devuelvan promesas:
 //    firsttarea(): tarda 1s y muestra "Primera tarea completada".
 //    secondtarea(): tarda 2s y muestra "Segunda tarea completada".
