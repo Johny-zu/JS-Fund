@@ -11,19 +11,49 @@ function procesarSaludo(callback){
     }, 2000)
 }
 procesarSaludo(saludar)
-// 2. Crea tres funciones task1(callback), task2(callback) y task3(callback). 
+// 2. Crea tres funciones tarea1(callback), tarea2(callback) y tarea3(callback). 
 //    Cada función debe tardar 1 segundo en ejecutarse y luego llamar al callback.
+
+function tarea1(callback){
+    setTimeout(() => {
+        console.log("Esta es la: tarea1")
+        callback()
+    }, 1000)
+}
+
+function tarea2(callback){
+    setTimeout(() => {
+        console.log("Esta es la: tarea2")
+        callback()
+    }, 1000)
+}
+
+function tarea3(callback){
+    setTimeout(() => {
+        console.log("Esta es la: tarea3")
+        callback()
+    }, 1000)
+}
+
+// Ejecutar las tareas
+tarea1(() => {
+    tarea2(() => {
+        tarea3(() => {
+            console.log("Todas las tareas completadas")
+        })
+    })
+})
 
 // 3. Crea una función para verificar un número que retorne una Promesa. 
 //    Si el número es par, la promesa se resuelve con el mensaje "Número par". 
 //    Si el número es impar, la promesa se rechaza con el mensaje "Número impar".
 
 // 4. Crea tres funciones que devuelvan promesas:
-//    firstTask(): tarda 1s y muestra "Primera tarea completada".
-//    secondTask(): tarda 2s y muestra "Segunda tarea completada".
-//    thirdTask(): tarda 1.5s y muestra "Tercera tarea completada".
+//    firsttarea(): tarda 1s y muestra "Primera tarea completada".
+//    secondtarea(): tarda 2s y muestra "Segunda tarea completada".
+//    thirdtarea(): tarda 1.5s y muestra "Tercera tarea completada".
 
-// 5. Transforma el ejercicio anterior de Promesas en una función async/await llamada executeTasks().
+// 5. Transforma el ejercicio anterior de Promesas en una función async/await llamada executetareas().
 
 // 6. Crea una función getUser(id) que devuelva una promesa y simule una llamada a una API (que se demore 2s).
 //    Si el id es menor a 5, la promesa se resuelve con { id, nombre: "Usuario " + id }.
