@@ -73,7 +73,39 @@ verificarNumero(8)
 //    firsttarea(): tarda 1s y muestra "Primera tarea completada".
 //    secondtarea(): tarda 2s y muestra "Segunda tarea completada".
 //    thirdtarea(): tarda 1.5s y muestra "Tercera tarea completada".
+function primeraPromesa() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            console.log("Primera tarea completada")
+            resolve()
+        }, 1000)
+    })
+}
 
+function segundaPromesa() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            console.log("Segunda tarea completada")
+            resolve()
+        }, 2000)
+    })
+}
+
+function terceraPromesa() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            console.log("Tercera tarea completada")
+            resolve()
+        }, 1500)
+    })
+}
+
+primeraPromesa()
+    .then(segundaPromesa)
+    .then(terceraPromesa)
+    .then(() => {
+        console.log("Todas las tareas completadas")
+    })
 // 5. Transforma el ejercicio anterior de Promesas en una función async/await llamada executetareas().
 
 // 6. Crea una función getUser(id) que devuelva una promesa y simule una llamada a una API (que se demore 2s).
