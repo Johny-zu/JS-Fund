@@ -110,3 +110,26 @@ paso1promesa()
     .then(() => {
         console.log("Todos los pasos con promesa completados")
     })
+
+ // Async/await
+function espera(ms){
+    return new Promise(resolver => setTimeout(resolver, ms))
+}
+
+ async function proceso(){
+    console.log("Inicio del proceso")
+
+    await espera(5000)
+    console.log("Despues de 5 seg")
+
+    await espera(1000)
+    console.log("Despues de 1 seg")
+
+    await espera(2000)
+    console.log("Despues de 2 seg")
+
+
+    console.log("Fin del proceso")
+}
+
+proceso()

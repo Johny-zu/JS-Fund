@@ -68,4 +68,5 @@ Cuando JS ejecuta codigo, este se ejecuta en un solo hilo donde va interpretando
     - call stack(pila de ejecucion)
     - Web apis(Apis del navegados o node.js): setTimeout()...
     - task queue(Colas de tareas) y microtaskQueue
-    
+- Promesas: Procesos que se piensan acabar de forma en la que estas puedan o no puedan realizarse pero haciendo el proceso dependiendo de los resultados de de la operacion en marcha
+- Async/await: Funcion asincrona que espera hasta que una promesa este resuleta, y despued de un tiempo pactado, esta comenzara a correr
