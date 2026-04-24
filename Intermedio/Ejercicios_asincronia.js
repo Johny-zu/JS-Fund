@@ -106,7 +106,15 @@ primeraPromesa()
     .then(() => {
         console.log("Todas las tareas completadas")
     })
-// 5. Transforma el ejercicio anterior de Promesas en una función async/await llamada executetareas().
+// 5. Transforma el ejercicio anterior de Promesas en una función async/await llamada ejecutarProcesoPromesa().
+async function ejecutarProcesoPromesa() {
+    await primeraPromesa()
+    await segundaPromesa()
+    await terceraPromesa()
+    console.log("Todas las tareas completadas")
+}
+
+ejecutarProcesoPromesa()
 
 // 6. Crea una función getUser(id) que devuelva una promesa y simule una llamada a una API (que se demore 2s).
 //    Si el id es menor a 5, la promesa se resuelve con { id, nombre: "Usuario " + id }.
