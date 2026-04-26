@@ -85,3 +85,7 @@ Apis que usan para funcionar el protocolo de htpp y URLs y estas se trabajan con
     - 404: Error de no hallado
     - 500: Error del lado servidor
 - Informacion de uso de APIS: https://jsonplaceholder.typicode.com/
+- Herramientas para uso de POST:
+    - Postman: https://www.postman.com/ => Sirve como una UI que te ayuda a generar las peticiones sin codigo
+    - Apidog: https://apidog.com/es/ => Ayuda a creacion de apis documentacion, ademas lo mismo que postman
+    - Extension en VSC: Thunder client => es un cliente HTTP que lo tienes en una extension 
