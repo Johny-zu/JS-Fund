@@ -70,3 +70,17 @@ Cuando JS ejecuta codigo, este se ejecuta en un solo hilo donde va interpretando
     - task queue(Colas de tareas) y microtaskQueue
 - Promesas: Procesos que se piensan acabar de forma en la que estas puedan o no puedan realizarse pero haciendo el proceso dependiendo de los resultados de de la operacion en marcha
 - Async/await: Funcion asincrona que espera hasta que una promesa este resuleta, y despued de un tiempo pactado, esta comenzara a correr
+
+## Apis rest
+Apis que usan para funcionar el protocolo de htpp y URLs y estas se trabajan con json, estos son objetos para intercambiar datos 
+- HTTP: Protocolos de transferencia de datos, estos usan metodos como
+    - get: Este toma los datos de x URL y el json nos dara la informacion
+    - post: Este nos ayuda a enviar datos para crear nuevos recursos(EJ: crear usuario)
+    - put: Sirve para enviar datos a un servidor, pero esta ves para modificar un recurso
+    - delete: Solicita al servidor eliminar un recurso
+- Codigos de respuesta HTTP: Codigo que hace que cuando haces cualquier peticion mediante HTTP, solicitando los metodos comentados, hace que el servidos debe de ir respondiendo algo, los cuales serian los siguientes:
+    - 200: Una respuesta de OK, esta es un exitoso
+    - 201: Una respuesta de OK, detallada sobre lo que hizo
+    - 400: Error por parte del usuario
+    - 404: Error de no hallado
+    - 500: Error del lado servidor
