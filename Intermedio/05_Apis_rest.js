@@ -25,3 +25,28 @@ async function getPosts(){
 }
 
 getPosts()
+
+// solicitud post
+async function createPosts(){
+    try{
+        const  newPost = {
+            userId: 1,
+            tittle: "Este es el titulo del post",
+            body: "Este es el cuerpo"
+        }
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: JSON.stringify(newPost)
+        })
+        
+        const data = await response.json()
+        console.log(data)
+    } catch(error){
+        console.log("Error: ", error)
+    }
+}
+
+createPosts()
