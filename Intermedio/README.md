@@ -84,3 +84,4 @@ Apis que usan para funcionar el protocolo de htpp y URLs y estas se trabajan con
     - 400: Error por parte del usuario
     - 404: Error de no hallado
     - 500: Error del lado servidor
+- Informacion de uso de APIS: https://jsonplaceholder.typicode.com/
