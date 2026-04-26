@@ -149,12 +149,60 @@ obtenerUsuario(5)
 //    setTimeout(() => console.log("setTimeout ejecutado"), 0)
 //    Promise.resolve().then(() => console.log("Promesa resuelta"))
 //    console.log("Fin")
+console.log("Inicio")
+setTimeout(() => console.log("setTimeout ejecutado"), 0)
+Promise.resolve().then(() => console.log("Promesa resuelta"))
+console.log("Fin")
+
 
 // 8. Crea tres funciones que devuelvan promesas con tiempos de espera distintos.
 //    A continuación, usa Promise.all() para ejecutarlas todas al mismo tiempo y mostrar "Todas las promesas resueltas" cuando terminen.
+function tareaUno() {
+    return new Promise(resolver => {
+        setTimeout(() => {
+            console.log("Tarea uno completada")
+            resolver()
+        }, 1000)
+    })
+}
 
+function tareaDos() {
+    return new Promise(resolver => {
+        setTimeout(() => {
+            console.log("Tarea dos completada")
+            resolver()
+        }, 2000)
+    })
+}
+
+function tareaTres() {
+    return new Promise(resolver => {
+        setTimeout(() => {
+            console.log("Tarea tres completada")
+            resolver()
+        }, 1500)
+    })
+}
+
+Promise.all([tareaUno(), tareaDos(), tareaTres()])
+    .then(() => {
+        console.log("Todas las promesas resueltas")
+    })
 // 9. Crea una función waitSeconds(segundos) que use setTimeout dentro de una Promesa para esperar la cantidad de segundos indicada.
 //    A continuación, usa async/await para que se espere 3 segundos antes de mostrar "Tiempo finalizado" en consola.
+function esperarSegundos(segundos) {
+    return new Promise(resolver => {
+        setTimeout(resolver, segundos * 1000)
+    })
+}
+
+async function esperarTiempo() {
+    console.log("Esperando 3 segundos...")
+    await esperarSegundos(3)
+    console.log("Tiempo finalizado")
+}
+
+esperarTiempo()
 
 // 10. Crea una simulación de un cajero automático usando asincronía.
 //     - La función checkBalance() tarda 1s y devuelve un saldo de 500$.
@@ -167,3 +215,49 @@ obtenerUsuario(5)
 //     Operación exitosa, saldo restante: 200$
 //     Retirando 300$...
 //     Error: Fondos insuficientes
+
+let saldo = 500
+
+function revisarSaldo() {
+    return new Promise(resolver => {
+        setTimeout(() => {
+            console.log(`Saldo disponible: ${saldo}$`)
+            resolver(saldo)
+        }, 1000)
+    })
+}
+
+function retirarDinero(cantidad) {
+    return new Promise((resolver, rechazar) => {
+        setTimeout(() => {
+            if (saldo >= cantidad) {
+                saldo -= cantidad
+                resolver(`Operación exitosa, saldo restante: ${saldo}$`)
+            } else {
+                rechazar("Error: Fondos insuficientes")
+            }
+        }, 2000)
+    })
+}
+
+async function cajeroAutomatico() {
+    await revisarSaldo()
+    
+    console.log("Retirando 300$...")
+    try {
+        const resultado1 = await retirarDinero(300)
+        console.log(resultado1)
+    } catch (error) {
+        console.log(error)
+    }
+    
+    console.log("Retirando 300$...")
+    try {
+        const resultado2 = await retirarDinero(300)
+        console.log(resultado2)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+cajeroAutomatico()
