@@ -89,3 +89,8 @@ Apis que usan para funcionar el protocolo de htpp y URLs y estas se trabajan con
     - Postman: https://www.postman.com/ => Sirve como una UI que te ayuda a generar las peticiones sin codigo
     - Apidog: https://apidog.com/es/ => Ayuda a creacion de apis documentacion, ademas lo mismo que postman
     - Extension en VSC: Thunder client => es un cliente HTTP que lo tienes en una extension 
+
+## Estructuras DOM
+Document objetct module, este esta relacionado con la programacion web, con el front end. Este hace que JS pueda interactuar con una web, el cual por lo general carga HTML y CSS. Este da interaccion en las paginas web, por ejemplo, hace que los botones jalen, los inputs reciban o los eventos se accionen.
+
+El DOM es una representacion de forma de arbol de todos los elementos que tenemos en la web, es la estructura que hace referencia a todo lo que esta en la pagina y con esta referencia puede acceder a cada elemento para hacer interactuable la pagina. 
